@@ -7,11 +7,10 @@ class Storage {
     return this.items;
   }
   addItem(item) {
-    return this.items.push(items);
+    return this.items.push(item);
   }
   removeItem(item) {
     for (let i = 0; i < this.items.length; i += 1) {
-      console.log(this.items[i]);
       if (this.items[i] === item) {
         return this.items.splice(i, 1);
       }
